@@ -1,15 +1,18 @@
-# my_app.rb
 require 'sinatra'
 
-class MyApp < Sinatra::Base #inherit from Base class within Sinatra module
-
-  # get takes a string argument and defines routes
-  get "/" do # e.g. "/" is homepage "/news", what happens in block is what happens when someone goes to route
-    erb :index # give symbol,a method given to you by sinatra - looks for a file and reads it (e.g. html file)
+class MyApp < Sinatra::Base
+  get "/" do
+    erb :home #links to recent posts
   end
 
-  get "/about-me" do
-    "Blargh"
+  get "/about" do
+    erb :about_me
   end
 
+  get "/posts/:blogposts" do #by date mm_dd_yy
+    erb "/posts/#{params[:blogposts]}".to_sym #dynamically find posts by date
+    #("/posts/"params[:blogposts]).to_sym possibly work
+  end
 end
+      
+    
