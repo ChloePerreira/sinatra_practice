@@ -1,2 +1,28 @@
+<!-- <h1>Complexity</h1> -->
 
-Blah blah blah
+<p><b>Complexity</b></p>
+
+<p><b>Who.</b> Alan Turing. He invented a mathematical model of computing, aka the Turing machine. This concept can be used to model an algorithm and determine the time and space resources it will consume.</p>
+
+<p><b>Where.</b> Your algorithms. Those step-by-step procedures that you write in your code to solve a problem or make a calculation.</p> 
+
+<p><b>Why.</b> To understand how fast your algorithm will run and how much memory it will consume. This will enable you to make fast and efficient programs.
+
+<p><b>What.</b> Your algorithm will take a certain amount of time to run, depending on the input. How long? It depends on the algorithm. We denote the possibilities using Big O notation. This allows us to imagine how an algorithm will scale as a function of the input size. Typically, we think about the worst case scenario (i.e. huge input). We represent input size with the letter 'n'. Here are some common functions:
+<br>
+- O(1) - constant. Input size doesn't matter, the time it takes will always be the same. (e.g. a simple true/false statement)
+<br>
+- O(log n) - logarithimic. The rate at which the time it takes for the algorithm to run initially increases with input size, but stabilizes with increased input. (e.g. binary search, guessing a number based on the midpoint of a range, and resetting your range based on whether your guess was too high or too low)
+<br>
+- O(n) - linear. The time the algorithm takes to run is directly proportional to the size of the input. (e.g. checking through a list of numbers one-by-one)
+<br>
+- O(n^2) - exponential. Performance is proportional to the size of the input... squared. Yikes! (e.g. insertion sort, sorting by going through a list of numbers one-by-one and checking against each previous number)
+<br>
+- See <a href = "http://en.wikipedia.org/wiki/Big_O_notation#Orders_of_common_functions">here</a> for more examples.
+<br>
+Your algorithm will also use a certain amount of memory (space) to run. The same functions listed above can be used to describe space complexity. An algorithm with constant space complexity will use the same amount of space no matter how large the input is. Alternatively, an algorithm may create additional objects while running (e.g. performing a calculation and storing the result(s) in a separate array with each step). The latter would be described by nonconstant functions because the memory used hinges on the input size.
+</p> 
+
+<p><b>When.</b> Before you implement an algorithm that will use more memory than there are stars in the sky. When you want your algorithm to finish well before the heat death of the universe.</p>
+
+<p><b>How. </b><a href="http://en.wikipedia.org/wiki/Computational_complexity_theory">Wikipedia</a>. <a href="http://www.cs.rit.edu/~rwd/CS_Theory/pdf/1001-Complexity.pdf">RIT</a>. <a href="http://www.perlmonks.org/?node_id=573138">Big O notation</a>. <a href="http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/">Rob Bell</a>. <a href = "http://stackoverflow.com/questions/18686121/differences-between-time-complexity-and-space-complexity">Stack Overflow.</a></p>

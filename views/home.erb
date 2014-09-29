@@ -1,14 +1,10 @@
 
-Test Why doesnt this show up?
-<h1>
-</h1>
-<hr>
-Recent posts
+
+<b>recent posts</b> <!--can't put in h1 or too much vert space?-->
 <%  @posts.last(3).reverse.each do |post| %> <!-- < % for Ruby and < %= to inject -->
   <br><a href="<%= post.url %>"> <%= post.print_date(post.title) %></a>
 <% end %>
 
-<p>test</p>
 
 <!--<form action="/" method='POST'>
   First name:
