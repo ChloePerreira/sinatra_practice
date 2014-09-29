@@ -1,8 +1,29 @@
-<link rel="stylesheet" href="/style.css">
-<a href="/">Home<a>     <a href="/about">About</a>
-<hr>
+<head> <!-- meta data, don't load images here -->
+  <link rel="stylesheet" href="/style.css"> <!--It knows that this lives in public dir -->
+  <!-- practice loading js  <script src"/app.js"></script> -->
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+</head>
 
-<%= yield %> <!--puts on each page-->
+<h1>
+  <a href= "/" style="text-decoration: none; color: #0C090A">\ home \<a>
+  <a href= "/about" style="text-decoration: none; color: #0C090A">\ about \</a> <!-- make this a resume-->
+  <a href= "/blog" style="text-decoration: none; color: #0C090A">\ blog \</a> <!-- need to make this page -->
+  <a href= "/contact" style="text-decoration: none; color: #0C090A">\ contact \</a> <!-- make this page too -->
+<hr>
+</h1>
+
+<!--<h1>
+  <div id="container">
+    <img src="/pier.jpg" alt="Sunset in Seattle">
+    <p id="text">
+      <a href="/">home<a>
+      <a href="/about">about</a>
+    </p>
+</h1>
+
+<!--<img src="/Lygus.lineolaris.jpg" alt="Lygus" height=30%>
+
+<%= yield %> <!--puts on each page, put where you want your content-->
 
 <hr>
 <a href="#top">Back to top</a>

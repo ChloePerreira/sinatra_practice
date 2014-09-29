@@ -1,6 +1,21 @@
-<h1>Home page</h1>
-<br>
-<h2>Recent posts</h2>
-<li><a href="/posts/09_24_14">September 24, 2014<a></li>
-<li><a href="/posts/09_23_14">September 23, 2014<a></li>
-<li><a href="/posts/09_22_14">September 22, 2014<a></li>
+
+Test Why doesnt this show up?
+<h1>
+</h1>
+<hr>
+Recent posts
+<%  @posts.last(3).reverse.each do |post| %> <!-- < % for Ruby and < %= to inject -->
+  <br><a href="<%= post.url %>"> <%= post.print_date(post.title) %></a>
+<% end %>
+
+<p>test</p>
+
+<!--<form action="/" method='POST'>
+  First name:
+  <input type="text" name="first_name" />
+  <br>
+  Last name:
+  <input type="text" name="last_name" />
+  <br>
+  <input type="submit">
+</form>-->

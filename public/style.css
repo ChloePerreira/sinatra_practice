@@ -1,8 +1,87 @@
+h1 {
+  font-family: 'Inconsolata','Times New Roman';
+  font-size: 24px;
+  color: #0C090A;
+  letter-spacing: 0.25em;
+  text-align: center;
+}
+  
+body {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Inconsolata', 'Times New Roman';
+}
+
+
+/*h1 {
+  font-size: 12 px;
+  font-family: Georgia;
+  color: yellow;
+  margin: 20px;
+  padding: 40px;
+}
+
+h1 a {
+  color: #FFFFFF
+}
+
+#container {
+  height:150;
+  width:351;
+  position:relative;
+}
+
+#image {
+  postiion:absolute;
+  left: 0;
+  top 0;
+}
+
+#text {
+  z-index:100;
+  position:absolute;
+  color:red;
+  font-size:24px;
+  font-weight:normal;
+  left:200;
+  top: 150;
 
 body {
-  background-color: #FAFFFF
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  width 100%;
+  margin: 20px 0;
+}
+
+nav ul li {
+  width: 50%;
+  }
+
+nav ul li a {
+  display: block;
+  width: 100%;
+}
+
+
+
+/*Can do font-size: 12px; and color: navy; in body and border: 2
+
+/* Makes links red, p would color the paragraphsi */
+
+/*p {
+  color: red;
 }
 
 a {
-  color: red
+  color: red;
 }
+
+body {
+  font-size: 14px;
+  color: navy
+}*/
+
