@@ -22,6 +22,14 @@ class MyApp < Sinatra::Base
     erb :about_me
   end
 
+  get "/contact" do
+    erb :contact
+  end
+
+  get "/blog" do
+    erb :blog
+  end
+
   get "/posts/:blogposts" do #by date mm_dd_yyi # can do posts/:date/:somethingelse
     erb "/posts/#{params[:blogposts]}".to_sym #dynamically find posts by date
     #("/posts/"params[:blogposts]).to_sym possibly work

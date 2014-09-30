@@ -1,12 +1,14 @@
+<body class='home'><!--<img class="trees" src="/trees.png" alt="Image source: https://www.flickr.com/photos/23209605@N00/">-->
 
+  </div>
+    <div class='main-text'><b>recent posts</b> <!--can't put in h1 or too much vert space?-->
+      <%  @posts.last(3).reverse.each do |post| %> <!-- < % for Ruby and < %= to inject -->
+      <br><a href="<%= post.url %>"> <%= post.print_date(post.title) %></a>
+      <% end %>
+    </div>
+  </div>
 
-<div class='main-text'><b>recent posts</b> <!--can't put in h1 or too much vert space?-->
-<%  @posts.last(3).reverse.each do |post| %> <!-- < % for Ruby and < %= to inject -->
-  <br><a href="<%= post.url %>"> <%= post.print_date(post.title) %></a>
-<% end %>
-</div>
-
-
+</body>
 <!--<form action="/" method='POST'>
   First name:
   <input type="text" name="first_name" />

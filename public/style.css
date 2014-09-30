@@ -2,58 +2,86 @@ body {
   font-family: 'Roboto', 'Helvetica';
   background-color: white;
   margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  color: #52D017;
+}
+
+/* Background image for homepage*/
+body.home { 
+  background-image: url('/trees2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Gray bar behind header */
+.container {
+  width: 2000px;
+  margin: 0  auto;
+  background-color: white;
+  /*background-color: #e5e4e2;*/
+}
+
+/* Header */
+.header a {
+  text-decoration: none;
+  color: black;
 }
 
 .header {
-  display: inline-block;
-  height: 80px;
+  height: 175px;
   font-family: 'Roboto', 'Helvetica';
   font-size: 22px;
   font-weight: 300;
-  background-color: #E5E4E2;
-  width: 100%;
+ /* background-color: #E5E4E2;*/
 }
 
-.name {
-  margin: 15px 0px 0px 0px;
-  display: inline-block;
-  font-size: 42px;
-  float:left;
-  padding-left:100px;
-}
-
+/* Navigation */
 .nav {
-  margin: 0;
   display: inline-block;
-  float: right;
-  padding-top: 0px;
-  padding-right: 100px;
+  float: left;
 }
 
-.nav-list {
-  padding: 0;
-}
-
-.nav-list li {
-  margin: 0;
-  display: inline-block;
-  list-style: none;
-  padding-top: 13px;
-  padding-left: 40px;
-}
 
 .nav-list :hover {
   color: #52D017;
 }
 
-.nav a {
-  text-decoration: none;
-  color: black;
+.nav-list li { 
+  margin: 0 5px;
+  height: 30px;
+  display: inline-block;
+  list-style: none;
+  padding-top: 103px;
+  padding-left: 10px;
+}
+
+/*Name in header*/
+.name {
+  display: inline-block;
+  font-size: 42px;
+  float:left;
+  padding-top: 80px;
+  padding-left:100px;
+  padding-right: 35px;
 }
 
 .name a {
   text-decoration: none;
   color: black;
+}
+
+/* Footer */
+.footer {
+  padding-top: 3px;
+  text-align: center;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  position: fixed;
 }
 
 .icon-list li {
@@ -62,106 +90,22 @@ body {
   list-style: none;
 }
 
-.footer {
-  text-align: center;
-}
-
+/* Text on blog posts */
 .main-text {
   padding-left: 100px;
   padding-right: 100px;
 }
 
-/*h1 {
-  font-family: 'Inconsolata','Times New Roman';
-  font-size: 24px;
-  color: #0C090A;
-  letter-spacing: 0.25em;
-  text-align: left;
-  padding: 0px 0px 20px 5px
-}
-  
-body {
-  text-align: left;
-  font-size: 16px;
-  font-family: 'Inconsolata', 'Times New Roman';
+/* Green bar below header on blog posts */
+.green-bar {
+  padding-top: 150px;
+  width: 2000px;
+  background-color: rgba(82, 208, 23, 0.7)
 }
 
-p {
-  text-align: left;
-  line-height: 1.5;
-  max-width: 800px;
-  width: 100%;
-}*/  
-
-/*h1 {
-  font-size: 12 px;
-  font-family: Georgia;
-  color: yellow;
-  margin: 20px;
-  padding: 40px;
-}
-
-h1 a {
-  color: #FFFFFF
-}
-
-#container {
-  height:150;
-  width:351;
-  position:relative;
-}
-
-#image {
-  postiion:absolute;
-  left: 0;
-  top 0;
-}
-
-#text {
-  z-index:100;
-  position:absolute;
-  color:red;
-  font-size:24px;
-  font-weight:normal;
-  left:200;
-  top: 150;
-
-body {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-nav {
-  width 100%;
-  margin: 20px 0;
-}
-
-nav ul li {
-  width: 50%;
-  }
-
-nav ul li a {
-  display: block;
-  width: 100%;
-}
-
-
-
-/*Can do font-size: 12px; and color: navy; in body and border: 2
-
-/* Makes links red, p would color the paragraphsi */
-
-/*p {
-  color: red;
-}
-
-a {
-  color: red;
-}
-
-body {
-  font-size: 14px;
-  color: navy
-}*/
-
+.green-bar > h1 {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}  
