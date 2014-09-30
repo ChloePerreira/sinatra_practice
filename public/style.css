@@ -1,4 +1,77 @@
-h1 {
+body {
+  font-family: 'Roboto', 'Helvetica';
+  background-color: white;
+  margin: 0;
+}
+
+.header {
+  display: inline-block;
+  height: 80px;
+  font-family: 'Roboto', 'Helvetica';
+  font-size: 22px;
+  font-weight: 300;
+  background-color: #E5E4E2;
+  width: 100%;
+}
+
+.name {
+  margin: 15px 0px 0px 0px;
+  display: inline-block;
+  font-size: 42px;
+  float:left;
+  padding-left:100px;
+}
+
+.nav {
+  margin: 0;
+  display: inline-block;
+  float: right;
+  padding-top: 0px;
+  padding-right: 100px;
+}
+
+.nav-list {
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0;
+  display: inline-block;
+  list-style: none;
+  padding-top: 13px;
+  padding-left: 40px;
+}
+
+.nav-list :hover {
+  color: #52D017;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.name a {
+  text-decoration: none;
+  color: black;
+}
+
+.icon-list li {
+  margin: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+.footer {
+  text-align: center;
+}
+
+.main-text {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/*h1 {
   font-family: 'Inconsolata','Times New Roman';
   font-size: 24px;
   color: #0C090A;
@@ -18,7 +91,7 @@ p {
   line-height: 1.5;
   max-width: 800px;
   width: 100%;
-}  
+}*/  
 
 /*h1 {
   font-size: 12 px;

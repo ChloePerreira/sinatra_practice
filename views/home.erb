@@ -1,9 +1,10 @@
 
 
-<b>recent posts</b> <!--can't put in h1 or too much vert space?-->
+<div class='main-text'><b>recent posts</b> <!--can't put in h1 or too much vert space?-->
 <%  @posts.last(3).reverse.each do |post| %> <!-- < % for Ruby and < %= to inject -->
   <br><a href="<%= post.url %>"> <%= post.print_date(post.title) %></a>
 <% end %>
+</div>
 
 
 <!--<form action="/" method='POST'>

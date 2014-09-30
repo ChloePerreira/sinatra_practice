@@ -1,19 +1,36 @@
+<!DOCTYPE html>
+<html>
 <head> <!-- meta data, don't load images here -->
-  <link rel="stylesheet" href="/style.css"> <!--It knows that this lives in public dir -->
-  <!-- practice loading js  <script src"/app.js"></script> -->
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'     type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/style.css"> <!--default looks in public dir -->
 </head>
 
-<h1>
-  <a href= "/" style="text-decoration: none; color: #0C090A">\ home \<a>
-  <a href= "/about" style="text-decoration: none; color: #0C090A">\ about \</a> <!-- make this a resume-->
-  <a href= "/blog" style="text-decoration: none; color: #0C090A">\ blog \</a> <!-- need to make this page -->
-  <a href= "/contact" style="text-decoration: none; color: #0C090A">\ contact \</a> <!-- make this page too -->
-<hr>
-</h1>
+<div class='header'>
+  <div class = 'name'>
+    <a href= "/">C. Perreira</a>
+  </div>
+  <div class = 'nav'>
+    <ul class= 'nav-list'>
+      <li><a href= "/about">About</a></li>
+      <li><a href= "/blog">Blog</a></li>
+      <li><a href= "/contact">Contact</a></li>
+    </ul>
 
-<%= yield %>
+  </div>
+</div>
 
+<body>
+  <%= yield %>
+</body>
+
+<div class='footer'>
+  <ul class = 'icon-list'>
+    <li><a href="https://github.com/crystalperreira" target="_blank"><img src="/github-128-black.png" width="75" alt="Find me on GitHub"></a></li>
+    <li><a href="www.linkedin.com/pub/crystal-perreira/17/32/175/" target="_blank"><img src="/linkedin-128-black.png" width="75" alt="Find me on LinkedIn"></a></li>
+    <li><a href="https://twitter.com/crystaloptera" target="_blank"><img src="/twitter-128-black.png" width="75" alt="Find me on Twitter"></a></li>
+</div>
+</html>
 <!--<h1>
   <div id="container">
     <img src="/pier.jpg">
