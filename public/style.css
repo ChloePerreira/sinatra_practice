@@ -12,14 +12,14 @@ a {
 
 /* Background image for homepage*/
 body.home { 
-  background-image: url('/trees2.png');
+  background-image: url('/trees3.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 /* Gray bar behind header */
 .container {
-  width: 2000px;
+  width: 1680px;
   margin: 0  auto;
   background-color: white;
   /*background-color: #e5e4e2;*/
@@ -55,7 +55,7 @@ body.home {
   height: 30px;
   display: inline-block;
   list-style: none;
-  padding-top: 103px;
+  padding-top: 81px;
   padding-left: 10px;
 }
 
@@ -81,7 +81,6 @@ body.home {
   bottom: 0;
   height: 40px;
   width: 100%;
-  position: fixed;
 }
 
 .icon-list li {
@@ -99,7 +98,7 @@ body.home {
 /* Green bar below header on blog posts */
 .green-bar {
   padding-top: 150px;
-  width: 2000px;
+  width: 1680px;
   background-color: rgba(82, 208, 23, 0.7)
 }
 
