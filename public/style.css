@@ -12,7 +12,7 @@ a {
 
 /* Background image for homepage*/
 body.home { 
-  background-image: url('/trees5.png');
+  background-image: url('/trees6.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -22,13 +22,14 @@ div.quote {
   margin-right: auto;
   font-family: 'Vollkorn', 'Helvetica';
   display: block;
-  padding-top: 200px;
-  padding-bottom: 110px;
+  padding-top: 230px;
+  padding-bottom: 40px;
   text-align: center;
   font-size: 32px;
   height: 300px;
   width: 700px;
   background-color: transparent;
+  color: white; 
 }
 
 div.quote i {
@@ -59,14 +60,14 @@ div.quote i {
 
 /* Navigation */
 .nav {
-  display: inline-block;
+  display: inline;
   float: left;
 }
 
 
-.nav-list :hover {
+.nav-list > li :hover {
   color: #52D017;
-}
+}/*only immediate children?*/
 
 .nav-list li { 
   margin: 0 5px;
@@ -76,6 +77,30 @@ div.quote i {
   padding-top: 81px;
   padding-left: 10px;
 }
+
+/* Dropdown */
+.dropdown {
+  display: inline-block;
+  position: absolute;
+  left: 520px;
+  width: 150px;
+  display: none;
+  visibility: hidden;
+  text-align: left;
+}
+
+.dropdown li {
+  background: white;
+  display: block;
+  color: red;
+  padding: 7px;
+}
+
+.nav-list li:hover ul {
+  display: block;
+  visibility: visible;
+}
+
 
 /*Name in header*/
 .name {
@@ -115,9 +140,9 @@ div.quote i {
 
 /* Green bar below header on blog posts */
 .green-bar {
-  padding-top: 100px;
+  padding-top: 80px;
   width: 1680px;
-  background-color: rgba(82, 208, 23, 0.7)
+  background-color: rgba(82, 208, 23, 0.7);
 }
 
 .green-bar > h1 {
