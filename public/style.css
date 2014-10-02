@@ -74,7 +74,7 @@ div.quote i {
   height: 30px;
   display: inline-block;
   list-style: none;
-  padding-top: 81px;
+  padding-top: 92px;
   padding-left: 10px;
 }
 
@@ -82,7 +82,7 @@ div.quote i {
 .dropdown {
   display: inline-block;
   position: absolute;
-  left: 520px;
+  left: 650px;
   width: 150px;
   display: none;
   visibility: hidden;
@@ -102,14 +102,22 @@ div.quote i {
 }
 
 
-/*Name in header*/
+/*Name and logo in header*/
+.logo {
+  display: inline-block;
+  float: left;
+  padding-top: 77px;
+  padding-left: 100px;
+  padding-right: 7px;
+}
+
 .name {
   display: inline-block;
-  font-size: 42px;
+  font-size: 52px;
   float:left;
   padding-top: 80px;
-  padding-left:100px;
-  padding-right: 35px;
+  /*padding-left:100px;*/
+  padding-right: 40px;
 }
 
 .name a {
