@@ -133,7 +133,6 @@ body.home {
   float: left;
 }
 
-
 .nav-list > li :hover {
   color: #52D017;
 }/*only immediate children?*/
