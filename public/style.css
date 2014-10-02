@@ -12,33 +12,102 @@ a {
 
 /* Background image for homepage*/
 body.home { 
-  background-image: url('/trees6.png');
+  background: url('/trees6.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  min-width: 100vw;
+  /*height: 90vh;*/
 }
 
-div.quote {
+#quote-1 {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Vollkorn', 'Helvetica';
   display: block;
   padding-top: 200px;
-  padding-bottom: 55px;
+  padding-bottom: 100px;
   text-align: center;
   font-size: 37px;
-  height: 300px;
+  /*height: 300px;*/
+  min-height: 30vh;
   width: 800px;
   background-color: transparent;
   color: white; 
 }
 
-div.quote i {
+#quote-2 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Vollkorn', 'Helvetica';
+  display: block;
+  padding-top: 120px;
+  padding-bottom: 123px;
+  text-align: center;
+  font-size: 37px;
+  /*height: 300px;*/
+  min-height: 30vh;
+  width: 800px;
+  background-color: transparent;
+  color: white; 
+}
+
+#quote-3 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Vollkorn', 'Helvetica';
+  display: block;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 37px;
+  /*height: 300px;*/
+  min-height: 30vh;
+  width: 800px;
+  background-color: transparent;
+  color: white; 
+}
+
+#quote-4 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Vollkorn', 'Helvetica';
+  display: block;
+  padding-top: 180px;
+  padding-bottom: 120px;
+  text-align: center;
+  font-size: 37px;
+  /*height: 300px;*/
+  min-height: 30vh;
+  width: 800px;
+  background-color: transparent;
+  color: white; 
+}
+
+#quote-5 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Vollkorn', 'Helvetica';
+  display: block;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 37px;
+  /*height: 300px;*/
+  min-height: 30vh;
+  width: 800px;
+  background-color: transparent;
+  color: white; 
+}
+
+
+.quote i {
   font-size: 30px;
 }
 
 /* Gray bar behind header */
 .container {
-  width: 1680px;
+  min-width: 100vw;
   margin: 0  auto;
   background-color: white;
   /*background-color: #e5e4e2;*/
@@ -50,7 +119,7 @@ div.quote i {
   color: black;
 }
 
-.header {
+.header { 
   height: 175px;
   font-family: 'Roboto', 'Helvetica';
   font-size: 22px;
@@ -60,7 +129,7 @@ div.quote i {
 
 /* Navigation */
 .nav {
-  display: inline;
+  display: inline-block;
   float: left;
 }
 
@@ -127,35 +196,41 @@ div.quote i {
 
 /* Footer */
 .footer {
-  padding-top: 3px;
-  text-align: center;
+  /*padding-top: 3px;
   bottom: 0;
   height: 40px;
-  width: 100%;
+  width: 100%;*/
+  text-align: center;
+  height: 10vh;
+  min-width: 100vw;
+  margin: 0  auto;
+  background-color: white;
+
 }
 
 .icon-list li {
   margin: 0;
   display: inline-block;
   list-style: none;
+  padding-top: 7px;
 }
 
 /* Text on blog posts */
 .main-text {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 108px;
+  padding-right: 108px;
 }
 
 /* Green bar below header on blog posts */
 .green-bar {
   padding-top: 80px;
-  width: 1680px;
+  min-width: 100vw;
   background-color: rgba(82, 208, 23, 0.7);
 }
 
 .green-bar > h1 {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 108px;
+  padding-right: 108px;
   display: inline-block;
   vertical-align: middle;
 }  
