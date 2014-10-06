@@ -1,8 +1,9 @@
+/* Style text and links in body*/
 body {
   font-family: 'Roboto', 'Helvetica';
   background-color: white;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -10,6 +11,7 @@ a {
   color: #52D017;
 }
 
+/********HOMEPAGE****************/
 /* Background image for homepage*/
 body.home { 
   background: url('/trees6.png');
@@ -20,6 +22,8 @@ body.home {
   /*height: 90vh;*/
 }
 
+/*Cheesy quotes on homepage*/
+/*Divided by id for formatting and jQuery cycling*/
 #quote-1 {
   margin-left: auto;
   margin-right: auto;
@@ -42,7 +46,7 @@ body.home {
   font-family: 'Vollkorn', 'Helvetica';
   display: block;
   padding-top: 120px;
-  padding-bottom: 123px;
+  padding-bottom: 149px;
   text-align: center;
   font-size: 37px;
   /*height: 300px;*/
@@ -105,15 +109,15 @@ body.home {
   font-size: 30px;
 }
 
-/* Gray bar behind header */
+/*******HEADER/FOOTER************/
+/* White  bar behind header */
 .container {
   min-width: 100vw;
   margin: 0  auto;
   background-color: white;
-  /*background-color: #e5e4e2;*/
 }
 
-/* Header */
+/* Header text styling */
 .header a {
   text-decoration: none;
   color: black;
@@ -124,10 +128,9 @@ body.home {
   font-family: 'Roboto', 'Helvetica';
   font-size: 22px;
   font-weight: 300;
- /* background-color: #E5E4E2;*/
 }
 
-/* Navigation */
+/* Horizontal navigation bar */
 .nav {
   display: inline-block;
   float: left;
@@ -135,7 +138,7 @@ body.home {
 
 .nav-list > li :hover {
   color: #52D017;
-}/*only immediate children?*/
+}
 
 .nav-list li { 
   margin: 0 5px;
@@ -146,7 +149,7 @@ body.home {
   padding-left: 10px;
 }
 
-/* Dropdown */
+/* Dropdown menu */
 .dropdown {
   display: inline-block;
   position: absolute;
@@ -193,12 +196,8 @@ body.home {
   color: black;
 }
 
-/* Footer */
+/* Footer with badges and links */
 .footer {
-  /*padding-top: 3px;
-  bottom: 0;
-  height: 40px;
-  width: 100%;*/
   text-align: center;
   height: 10vh;
   min-width: 100vw;
@@ -214,22 +213,29 @@ body.home {
   padding-top: 7px;
 }
 
-/* Text on blog posts */
+/***********BLOG************/
+/* Text styling for blog posts */
 .main-text {
-  padding-left: 108px;
-  padding-right: 108px;
+  /*padding-left: 108px;
+  padding-right: 108px;*/
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Green bar below header on blog posts */
 .green-bar {
-  padding-top: 80px;
+  padding-top: 60px;
   min-width: 100vw;
   background-color: rgba(82, 208, 23, 0.7);
 }
 
 .green-bar > h1 {
-  padding-left: 108px;
+  /*padding-left: 108px;
   padding-right: 108px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: middle;*/
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }  

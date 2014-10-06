@@ -1,9 +1,37 @@
-<div class="green-bar"><h1>Header<h1></div>
+<div class="green-bar"><h1>Vim: the bare minimum</h1></div>
 
-<div class="main-text">
-<p>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded market pivot onboarding freemium prototype ping pong. Early stage disruptive ecosystem community outreach dynamic location based strategic investor.</p> 
-
-<p>Accelerator photo sharing business school drop out ramen hustle crush it revenue traction platforms. Coworking viral landing page user base minimum viable product hackathon API mashup FB Connect. Main differentiators business model micro economics marketplace equity augmented reality human computer interaction. Board members super angel preferred stock. Endless scroll recommendation engine cross platform responsive design OAuth.</p> 
-
-<p>Tablet publishing HTML5 mobile first really simple syndication meetups white board walls. User experience iterate algorithm gamification semantic web value add market research stealth. Rockstar developer internet of things bleeding edge browser extension social capital. Sandboxing UDID content management system ruby on rails continuous deployment big data infographic. Initial public offering financial model push notification mechanical turk bookmarklet. Term sheet convertible note colluding bootstrapping. Cloud computing subscription model out of the box proactive solution.</p>
+<div class = "main-text">
+<p>Vim is a text editor that is powerful and highly customizable. It's very fast since your hands never leave the keyboard. This can also make it a somewhat challenging to learn at first. Fortunately, if you can touch type, you can Vim. Here are the extreme basics for using Vim: 
+  <h2>Making a new file</h2>
+    <p>Use terminal to navigate to the place where you want your new file to live. To make your new file, type vim filename.extension. This is how you will reopen your file later. Note: it's easy create a new file from a typo this way. When opening a file, always use tab-complete.</p>
+  <h2>Saving and quitting</h2>
+    <p>Once you have your file open. Type :w to save ('w' for write) and :q to exit. You can also do :wq to save and exit in one go. If you don't want to save (maybe you didn't tab complete...) you can do :q! to quit and not save it at all. If vim doesn't listen to you when you type this, you are probably one one of the modes listed below. Press escape to exit a special mode.</p>
+  <h2>Modes</h2>
+    <h3>Insert</h3>
+      <p>Press i to enter insert mode. Once you are in insert mode, you can type code into your file.</p>
+    <h3>Visual</h3>
+      <p>Press v to enter into visual mode. This is how you will highlight text.</p>
+    <h3>Command</h3>
+      <p>This is the default mode. To get back to command mode, press Escape. You'll need to do this to switch between (e.g. to go from insert to visual) and to save/quit.</p>
+  <h2>Moving around</h2>
+      <p><b>Note</b>: Hit escape before navigating as these commands won't work in special modes.</p>
+      <h3>"Scrolling"</h3>
+        <p>Press cntrl-u to go up and cntrl-f to go down several lines at a time. Pneumonic: 'u' for up and 'f' for fin, which means end in Spanish.</p>
+      <h3>Jump down some lines</h3>
+        <p>Want to go down a certain number of lines? Enter that number and then the letter j. Pneumonic 'j' for jump.</p>
+      <h3>Jump to the end of a line</h3>
+        <p>E will take you to the end of a line. Pneumonic: 'E' for end.
+      <h3>Jump to the beginning of a line</h3>
+        <p>0 takes you to the beginning of a line. Pneumonic: position 0.</p>
+      <h3>Jump to the beginning of line 1</h3>
+        <p></p>
+  <h2>Highlight, cut or copy, and paste</h2>
+     <p>Escape whatever mode you're in and navigate down to whatever line you want to start highlighting. Hit v to enter visual mode and use the arrow keys to direct your highlighting. Press y to yank the text (just copy) or d to cut (this will d-elete the text you cut). These keys will take you out of visual mode. Navigate to where you want to paste and press p to paste.  
+  <h2>Delete an entire line</h2>
+     <p>dd will delete the line you're on</p> 
+  <h2>Undo/redo</h2>
+      <p></p>
+  <h2>Your vimrc</h2>
+      <p>This is a special file that will allow you to customize your vim experience. For example, you can define how many spaces are in a tab, make line numbers show, etc. To open it navigate to your home directory in terminal cd ~ and vim open your .vimrc file (vim .vimrc)</p>
+  <h2>Link</h2>
 </div> 
