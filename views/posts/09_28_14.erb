@@ -12,13 +12,29 @@
 <p><h2>Why</h2> To understand how fast your algorithm will run and how much memory it will consume. This will enable you to make fast and efficient programs.
 
 <p><h2>What</h2> Your algorithm will take a certain amount of time to run, depending on the input. How long? It depends on the algorithm. We denote the possibilities using Big O notation. This allows us to imagine how an algorithm will scale as a function of the input size. Typically, we think about the worst case scenario (e.g. huge input or sorting through a list that is completely unsorted). We represent input size with the letter 'n'. Here are some common functions:
-<ul>
-<li>O(1) - constant. Input size doesn't matter, the time it takes will always be the same. (e.g. a simple true/false statement)</li>
-<li>O(log n) - logarithimic. The rate at which the time it takes for the algorithm to run initially increases with input size, but stabilizes with increased input. (e.g. binary search, guessing a number based on the midpoint of a range, and resetting your range based on whether your guess was too high or too low)</li>
-<li>O(n) - linear. The time the algorithm takes to run is directly proportional to the size of the input. (e.g. checking through a list of numbers one-by-one)</li>
-<li>O(n^2) - exponential. Performance is proportional to the size of the input... squared. Yikes! (e.g. insertion sort, sorting by going through a list of numbers one-by-one and checking against each previous number)</li>
-<li>See <a href = "http://en.wikipedia.org/wiki/Big_O_notation#Orders_of_common_functions">here</a> for more examples.</li>
-</ul>
+<table>
+  <tr>
+    <td>O(1)</td> 
+    <td>Constant</td>
+    <td>Input size doesn't matter, the time it takes will always be the same. (e.g. a simple true/false statement)</td>
+  </tr>
+  <tr>
+    <td>O(log n)</td>
+    <td>Logarithimic</td>
+    <td>The rate at which the time it takes for the algorithm to run initially increases with input size, but stabilizes with increased input. (e.g. binary search, guessing a number based on the midpoint of a range, and resetting your range based on whether your guess was too high or too low)</td>
+  </tr>
+  <tr>
+    <td>O(n)</td>
+    <td>Linear</td> 
+    <td>The time the algorithm takes to run is directly proportional to the size of the input. (e.g. checking through a list of numbers one-by-one)</td>
+  </tr>
+  <tr>
+    <td>O(n^2)</td>
+    <td>Exponential</td>
+    <td>Performance is proportional to the size of the input... squared. Yikes! (e.g. insertion sort, sorting by going through a list of numbers one-by-one and checking against each previous number)</td>
+  </tr>
+</table>
+<p>See <a href = "http://en.wikipedia.org/wiki/Big_O_notation#Orders_of_common_functions">here</a> for more examples.</p>
 Your algorithm will also use a certain amount of memory (space) to run. The same functions listed above can be used to describe space complexity. An algorithm with constant space complexity will use the same amount of space no matter how large the input is. Alternatively, an algorithm may create additional objects while running (e.g. performing a calculation and storing the result(s) in a separate array with each step). The latter would be described by nonconstant functions because the memory used hinges on the input size.
 </p> 
 

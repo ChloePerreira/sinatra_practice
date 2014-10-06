@@ -3,35 +3,34 @@
 <div class = "main-text">
 <p>Vim is a text editor that is powerful and highly customizable. It's very fast since your hands never leave the keyboard. This can also make it a somewhat challenging to learn at first. Fortunately, if you can touch type, you can Vim. Here are the extreme basics for using Vim: 
   <h2>Making a new file</h2>
-    <p>Use terminal to navigate to the place where you want your new file to live. To make your new file, type vim filename.extension. This is how you will reopen your file later. Note: it's easy create a new file from a typo this way. When opening a file, always use tab-complete.</p>
+    <p>Use terminal to navigate to the place where you want your new file to live. To make your new file, type <pre><code>vim filename.extension</code></pre> This is how you will reopen your file later. Note: it's easy create a new file from a typo this way. When opening a file, always use tab-complete.</p>
   <h2>Saving and quitting</h2>
-    <p>Once you have your file open. Type :w to save ('w' for write) and :q to exit. You can also do :wq to save and exit in one go. If you don't want to save (maybe you didn't tab complete...) you can do :q! to quit and not save it at all. If vim doesn't listen to you when you type this, you are probably one one of the modes listed below. Press escape to exit a special mode.</p>
+    <p>Once you have your file open. Type <code>:w</code> to save ('w' for write) and <code>:q</code> to exit. You can also do <code>:wq</code> to save and exit in one go. If you don't want to save (maybe you didn't tab complete...) you can do <code>:q!</code> to quit and not save it at all. If Vim doesn't listen to you when you type this, you are probably not in command mode. Press escape to exit a special mode.</p>
   <h2>Modes</h2>
     <h3>Insert</h3>
-      <p>Press i to enter insert mode. Once you are in insert mode, you can type code into your file.</p>
+      <p>Press <code>i</code> to enter insert mode. Once you are in insert mode, you can type code into your file.</p>
     <h3>Visual</h3>
-      <p>Press v to enter into visual mode. This is how you will highlight text.</p>
+      <p>Press <code>v</code> to enter into visual mode. This is how you will highlight text.</p>
     <h3>Command</h3>
-      <p>This is the default mode. To get back to command mode, press Escape. You'll need to do this to switch between (e.g. to go from insert to visual) and to save/quit.</p>
+      <p>This is the default mode. To get back to command mode, press <code>esc</code>. You'll need to do this to switch between (e.g. to go from insert to visual) and to save/quit.</p>
   <h2>Moving around</h2>
-      <p><b>Note</b>: Hit escape before navigating as these commands won't work in special modes.</p>
+      <p><b>Note</b>: You can always use the arrow keys to move around. Hit <code>esc</code> to get into command mode so that you can navigate with the commands below.</p>
       <h3>"Scrolling"</h3>
-        <p>Press cntrl-u to go up and cntrl-f to go down several lines at a time. Pneumonic: 'u' for up and 'f' for fin, which means end in Spanish.</p>
-      <h3>Jump down some lines</h3>
-        <p>Want to go down a certain number of lines? Enter that number and then the letter j. Pneumonic 'j' for jump.</p>
+        <p>Press <code>ctrl+b</code> to go up and <code>ctrl+f</code> to go down several lines at a time. Pneumonic: 'b' for beginning and 'f' for fin, which means end in Spanish.</p>
+      <h3>Jump down n lines</h3>
+        <p>Want to go down a certain number of lines? Enter that number and then the letter <code>j</code>. Pneumonic: 'j' for jump.</p>
       <h3>Jump to the end of a line</h3>
-        <p>E will take you to the end of a line. Pneumonic: 'E' for end.
+        <p><code>E</code> will take you to the end of a line. Pneumonic: 'E' for end.
       <h3>Jump to the beginning of a line</h3>
-        <p>0 takes you to the beginning of a line. Pneumonic: position 0.</p>
-      <h3>Jump to the beginning of line 1</h3>
-        <p></p>
+        <p><code>0</code> takes you to the beginning of a line. Pneumonic: position 0 is the beginning.</p>
   <h2>Highlight, cut or copy, and paste</h2>
-     <p>Escape whatever mode you're in and navigate down to whatever line you want to start highlighting. Hit v to enter visual mode and use the arrow keys to direct your highlighting. Press y to yank the text (just copy) or d to cut (this will d-elete the text you cut). These keys will take you out of visual mode. Navigate to where you want to paste and press p to paste.  
+     <p>Escape whatever mode you're in and navigate down to whatever line you want to start highlighting. Hit <code>v</code> to enter visual mode and use the arrow keys to direct your highlighting. Press <code>y</code> to yank the text (just copy) or <code>d</code> to cut (this will d-elete the text you cut). These keys will take you out of visual mode. Navigate to where you want to paste and press <code>p</code> to paste.  
   <h2>Delete an entire line</h2>
-     <p>dd will delete the line you're on</p> 
+     <p><code>dd</code> will delete the line you're on.</p> 
   <h2>Undo/redo</h2>
-      <p></p>
+      <p><code>u</code> will undo and <code>ctrl-r</code> will redo.</p>
   <h2>Your vimrc</h2>
-      <p>This is a special file that will allow you to customize your vim experience. For example, you can define how many spaces are in a tab, make line numbers show, etc. To open it navigate to your home directory in terminal cd ~ and vim open your .vimrc file (vim .vimrc)</p>
+      <p>This is a special file that will allow you to customize your Vim experience. For example, you can define how many spaces are in a tab, show line numbers, etc. To open it, navigate to your home directory in terminal (<code>cd ~</code>) and Vim open your .vimrc file (<code>vim .vimrc</code>). Note that this is a hidden file.</p>
   <h2>Link</h2>
+      <p>I recommend checking out <a href="https://github.com/dougblack/dougblack.io/blob/master/markdown/a-good-vimrc.md">Doug Black's guide</a> to creating a good vimrc.</p>
 </div> 
